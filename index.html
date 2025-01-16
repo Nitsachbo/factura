@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="receipt">
+    <div class="header">
+        <img id="logo" src="logo.jpg" alt="Logo">
+        <h1>RECIBO</h1>
+        <p id="date">MM/DD/YYYY</p>
+        <p>Manager: John Doe</p>
+    </div>
+
+    <div class="items">
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody id="items-list">
+                <tr>
+                    <td>Producto 1</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Producto 2</td>
+                    <td>$15</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="total">
+        <p>Total: $25</p>
+    </div>
+
+    <div class="footer">
+        <p>Gracias por tu compra</p>
+    </div>
+
+    <button id="print-invoice">Imprimir</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
