@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="receipt">
+        <div class="header">
+            <img id="logo" src="logo.png" alt="Logo">
+            <h1>RECIBO</h1>
+            <p id="date"></p>
+            <p>Manager: <span id="manager-name"></span></p>
+        </div>
+        <div class="items">
+            <table id="items-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th class="price">Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Productos añadidos dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+        <div class="total">
+            <p>Total: $<span id="total-amount">0.00</span></p>
+        </div>
+        <div class="footer">
+            <p>¡Gracias por su compra!</p>
+        </div>
+        <button id="add-item">Añadir producto</button>
+        <button id="print-invoice">Imprimir</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
