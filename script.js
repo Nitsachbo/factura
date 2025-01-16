@@ -13,7 +13,7 @@ function formatDate() {
 document.getElementById('date').textContent = formatDate();
 
 // Establecer el nombre del gerente
-document.getElementById('manager-name').textContent = "Diego Cuellar";
+document.getElementById('manager-name').textContent = "Diego Cuellar A.";
 
 // Agregar un producto
 document.getElementById('add-item').addEventListener('click', () => {
