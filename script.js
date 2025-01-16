@@ -6,14 +6,14 @@ function formatDate() {
   const mm = String(today.getMonth() + 1).padStart(2, '0');
   const yyyy = today.getFullYear();
 
-  return `${mm}/${dd}/${yyyy}`;
+  return `${dd}/${mm}/${yyyy}`;
 }
 
 // Establecer la fecha en el recibo
 document.getElementById('date').textContent = formatDate();
 
 // Establecer el nombre del gerente
-document.getElementById('manager-name').textContent = "John Doe";
+document.getElementById('manager-name').textContent = "Diego Cuellar";
 
 // Agregar un producto
 document.getElementById('add-item').addEventListener('click', () => {
