@@ -1,0 +1,112 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.receipt {
+  width: 300px;
+  background: #ffffff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  margin-bottom: 15px;
+}
+
+#logo {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 5px 0;
+  border-bottom: 1px dashed black;
+  padding-bottom: 5px;
+}
+
+.items table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.items td {
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: left;
+  border-bottom: 1px dashed black;
+}
+
+.price {
+  text-align: right;
+}
+
+.total p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  border-top: 1px dashed black;
+  padding-top: 10px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+  border-top: 1px dashed black;
+  padding-top: 10px;
+}
+
+button {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button#print-invoice {
+  background-color: #007bff;
+}
+
+button#print-invoice:hover {
+  background-color: #0056b3;
+}
+
+@media print {
+  body {
+    margin: 0;
+    background: white;
+  }
+
+  .receipt {
+    width: 80mm;
+    border: none;
+    box-shadow: none;
+  }
+
+  button {
+    display: none;
+  }
+}
